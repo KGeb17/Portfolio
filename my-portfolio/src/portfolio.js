@@ -23,7 +23,7 @@ const Portfolio = () => {
           </div>
           <div style={styles.heroText}>
             <h1 style={styles.name}>Kalkidan A. Gebrehiwot</h1>
-            <p style={styles.tagline}>Ex-Amazon Operations | MSEM Candidate | Data Strategy</p>
+            <p style={styles.tagline}>Industrial Engineer | MSME Candidate | Content Strategist | Bridging Financial Literacy & Global Operations</p>
             <p style={styles.subTagline}>
               I build operational and analytics solutions that make teams faster, smarter, and
               more reliable.
