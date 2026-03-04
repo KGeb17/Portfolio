@@ -205,7 +205,7 @@ function Hero() {
       <div className="hero-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", alignItems: "center", gap: "4rem", maxWidth: 1200, margin: "0 auto" }}>
         {/* LEFT */}
         <div>
-          <FadeUp delay={0}>
+          
             <div style={{
               display: "inline-flex", alignItems: "center", gap: "0.55rem",
               background: T.forest, color: T.gold, fontSize: "0.72rem",
@@ -215,9 +215,9 @@ function Hero() {
               <span style={{ width: 7, height: 7, background: T.gold, borderRadius: "50%", animation: "pulse 2s infinite" }} />
               Open to Opportunities
             </div>
-          </FadeUp>
+          
 
-          <FadeUp delay={80}>
+          
             <h1 style={{
               fontFamily: "'Cormorant Garamond', serif",
               fontSize: "clamp(3.5rem,6vw,6rem)", fontWeight: 300,
@@ -226,9 +226,9 @@ function Hero() {
               Kalkidan<br />
               <em style={{ fontStyle: "italic", color: T.rust }}>Gebremichael</em>
             </h1>
-          </FadeUp>
+          
 
-          <FadeUp delay={160}>
+          
             <p style={{
               fontFamily: "'Cormorant Garamond', serif",
               fontSize: "clamp(1.05rem,1.8vw,1.45rem)", fontWeight: 300,
@@ -236,28 +236,28 @@ function Hero() {
             }}>
               Builder. Leader. Storyteller.
             </p>
-          </FadeUp>
+          
 
-          <FadeUp delay={240}>
+          
             <p style={{ fontSize: "0.97rem", lineHeight: 1.8, color: "#4A4540", maxWidth: 490, marginBottom: "2.5rem" }}>
               Industrial Engineer turned Amazon Operations Leader. Davis Peace Project recipient.
               Directing a children's show in Addis. Building financial literacy for the Ethiopian
               diaspora — one Amharic reel at a time.
             </p>
-          </FadeUp>
+          
 
-          <FadeUp delay={320}>
+          
             <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
               <a href="#work" className="btn-primary">See My Work</a>
               <a href="#contact" className="btn-outline">Let's Connect</a>
             </div>
-          </FadeUp>
+          
         </div>
 
         {/* RIGHT — floating card stack */}
-        <FadeUp delay={200} style={{ display: "flex", justifyContent: "center" }}>
+        
           <HeroCard />
-        </FadeUp>
+        
       </div>
     </section>
   );
@@ -371,7 +371,7 @@ function WorkChapter() {
   return (
     <Chapter id="work">
       <ChapterContent>
-        <FadeUp>
+        
           <SectionLabel>Professional Experience</SectionLabel>
           <SectionTitle>I lead at <em style={{ fontStyle: "italic", color: T.rust }}>scale</em></SectionTitle>
           <Body style={{ marginBottom: "1.6rem" }}>
@@ -382,9 +382,9 @@ function WorkChapter() {
           <div style={{ display: "flex", flexWrap: "wrap", gap: "0.55rem", marginBottom: "2rem" }}>
             {[["Amazon","forest"],["Lean Six Sigma","gold"],["Process Optimization","rust"],["Industrial Engineering","earth"],["Team Leadership","forest"],["Operations","rust"]].map(([t,v]) => <Tag key={t} variant={v}>{t}</Tag>)}
           </div>
-        </FadeUp>
+        
 
-        <FadeUp delay={120}>
+        
           {/* Timeline */}
           <div style={{ borderLeft: `2px solid ${T.earth}`, paddingLeft: "2rem", marginTop: "0.5rem" }}>
             {[
@@ -399,10 +399,10 @@ function WorkChapter() {
               </div>
             ))}
           </div>
-        </FadeUp>
+        
       </ChapterContent>
 
-      <FadeUp delay={150}>
+      
         <div style={{ background: T.forest, borderRadius: 20, padding: "3rem 2.5rem", position: "relative", overflow: "hidden", color: "white" }}>
           <div style={{ position: "absolute", bottom: "-2.5rem", right: "-2.5rem", width: 150, height: 150, borderRadius: "50%", background: "rgba(255,255,255,0.05)" }} />
           <div style={{ position: "absolute", top: "-1rem", left: "-1rem", width: 90, height: 90, borderRadius: "50%", background: "rgba(255,255,255,0.03)" }} />
@@ -418,7 +418,7 @@ function WorkChapter() {
             ))}
           </div>
         </div>
-      </FadeUp>
+      
     </Chapter>
   );
 }
@@ -428,7 +428,7 @@ function ImpactChapter() {
   return (
     <Chapter id="impact" bg={T.warm} reverse>
       <ChapterContent>
-        <FadeUp>
+        
           <SectionLabel>Global Impact</SectionLabel>
           <SectionTitle>Peace is a <em style={{ fontStyle: "italic", color: T.rust }}>project</em></SectionTitle>
           <Body style={{ marginBottom: "1.3rem" }}>
@@ -445,10 +445,10 @@ function ImpactChapter() {
           <div style={{ display: "flex", flexWrap: "wrap", gap: "0.55rem" }}>
             {[["Davis Peace Project","rust"],["Sudan · Energy","forest"],["UWC Adriatic · Italy","gold"],["Sustainability","earth"]].map(([t,v]) => <Tag key={t} variant={v}>{t}</Tag>)}
           </div>
-        </FadeUp>
+        
       </ChapterContent>
 
-      <FadeUp delay={150} style={{ direction: "ltr", display: "flex", flexDirection: "column", gap: "1.2rem", alignItems: "center" }}>
+      
         {/* Award badge */}
         <div style={{
           background: `linear-gradient(135deg, ${T.gold}, #B8882A)`,
@@ -469,7 +469,7 @@ function ImpactChapter() {
           <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem", fontWeight: 600, color: T.forest, marginBottom: "0.3rem" }}>UWC Adriatic College</div>
           <div style={{ fontSize: "0.82rem", color: T.muted, lineHeight: 1.55 }}>Full Ride Scholarship · Trieste, Italy<br />International Baccalaureate</div>
         </div>
-      </FadeUp>
+      
     </Chapter>
   );
 }
@@ -481,7 +481,7 @@ function ContentChapter() {
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
 
         {/* Mission banner */}
-        <FadeUp>
+        
           <div style={{ background: T.forest, borderRadius: 22, padding: "3.5rem", marginBottom: "3rem", position: "relative", overflow: "hidden" }}>
             <div style={{ position: "absolute", top: "-3rem", right: "-3rem", width: 240, height: 240, borderRadius: "50%", background: "rgba(212,168,67,0.07)", pointerEvents: "none" }} />
             <SectionLabel>Content & Community</SectionLabel>
@@ -496,11 +496,11 @@ function ContentChapter() {
               So now I make it. In English. In Amharic. In whatever format reaches the person who needs it most.
             </p>
           </div>
-        </FadeUp>
+        
 
         {/* Two platform cards */}
         <div className="two-col" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.8rem", marginBottom: "1.8rem" }}>
-          <FadeUp delay={0}>
+          
             <div style={{ background: "white", border: `1px solid rgba(196,168,130,0.3)`, borderRadius: 20, overflow: "hidden" }}>
               <div style={{ background: T.night, padding: "2rem", position: "relative", overflow: "hidden" }}>
                 <div style={{ position: "absolute", top: "-1rem", right: "-1rem", width: 100, height: 100, borderRadius: "50%", background: "rgba(212,168,67,0.07)" }} />
@@ -526,9 +526,9 @@ function ContentChapter() {
                 </div>
               </div>
             </div>
-          </FadeUp>
+          
 
-          <FadeUp delay={120}>
+          
             <div style={{ background: "white", border: `1px solid rgba(196,168,130,0.3)`, borderRadius: 20, overflow: "hidden" }}>
               <div style={{ background: T.rust, padding: "2rem", position: "relative", overflow: "hidden" }}>
                 <div style={{ position: "absolute", top: "-1rem", right: "-1rem", width: 100, height: 100, borderRadius: "50%", background: "rgba(255,255,255,0.07)" }} />
@@ -554,11 +554,11 @@ function ContentChapter() {
                 </div>
               </div>
             </div>
-          </FadeUp>
+          
         </div>
 
         {/* Meki full-width */}
-        <FadeUp delay={80}>
+        
           <div className="meki-grid" style={{ background: `linear-gradient(135deg, #1A1A18 0%, #2D1F0E 100%)`, borderRadius: 22, padding: "3rem", display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: "3rem", alignItems: "center", position: "relative", overflow: "hidden", marginBottom: "1.8rem" }}>
             <div style={{ position: "absolute", top: 0, right: 0, width: 300, height: 300, background: `radial-gradient(circle, rgba(212,168,67,0.07) 0%, transparent 70%)`, pointerEvents: "none" }} />
             <div>
@@ -592,7 +592,7 @@ function ContentChapter() {
               </div>
             </div>
           </div>
-        </FadeUp>
+        
 
         {/* Mission triptych */}
         <div className="three-col" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1.5rem" }}>
@@ -601,12 +601,12 @@ function ContentChapter() {
             { label: "The Gap",     bg: T.warm, border: true, color: T.night, accent: T.rust, text: "Millions of Ethiopians navigate finance, tech, and careers without content made for them." },
             { label: "The Answer",  bg: T.forest, border: false, color: "white", accent: T.gold, text: "I create it. In Amharic, in English, and in every format that works — until the gap closes." },
           ].map(({ label, bg, border, color, accent, text }) => (
-            <FadeUp key={label}>
+            
               <div style={{ background: bg, border: border ? `1px solid rgba(196,168,130,0.3)` : "none", borderRadius: 17, padding: "1.8rem" }}>
                 <div style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.65rem", letterSpacing: "0.15em", textTransform: "uppercase", color: accent, marginBottom: "0.7rem" }}>{label}</div>
                 <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.15rem", fontWeight: 400, color, lineHeight: 1.55 }}>{text}</p>
               </div>
-            </FadeUp>
+            
           ))}
         </div>
       </div>
@@ -619,7 +619,7 @@ function VenturesChapter() {
   return (
     <Chapter id="ventures" bg={T.warm} reverse>
       <ChapterContent>
-        <FadeUp>
+        
           <SectionLabel>Entrepreneurship & Life</SectionLabel>
           <SectionTitle>I don't just teach wealth —{" "}<em style={{ fontStyle: "italic", color: T.rust }}>I build it</em></SectionTitle>
           <Body style={{ marginBottom: "1.3rem" }}>
@@ -643,10 +643,10 @@ function VenturesChapter() {
               </div>
             ))}
           </div>
-        </FadeUp>
+        
       </ChapterContent>
 
-      <FadeUp delay={150} style={{ direction: "ltr", display: "flex", flexDirection: "column", gap: "1.2rem" }}>
+      
         <div className="venture-card" style={{ background: T.forest, color: "white" }}>
           <div style={{ position: "absolute", bottom: "-2rem", right: "-2rem", width: 130, height: 130, borderRadius: "50%", background: "rgba(255,255,255,0.05)" }} />
           <span style={{ fontSize: "2.2rem", display: "block", marginBottom: "0.8rem" }}>🧋</span>
@@ -667,7 +667,7 @@ function VenturesChapter() {
             </div>
           ))}
         </div>
-      </FadeUp>
+      
     </Chapter>
   );
 }
@@ -677,7 +677,7 @@ function Contact() {
   return (
     <section id="contact" style={{ background: T.night, padding: "8rem 4rem", textAlign: "center" }}>
       <div style={{ maxWidth: 600, margin: "0 auto" }}>
-        <FadeUp>
+        
           <p style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "uppercase", color: T.gold, marginBottom: "0.8rem" }}>Let's Connect</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2.5rem,5vw,4rem)", fontWeight: 300, color: "white", lineHeight: 1.1, marginBottom: "1.5rem" }}>
             Ready to <em style={{ fontStyle: "italic", color: T.gold }}>collaborate?</em>
@@ -699,7 +699,7 @@ function Contact() {
               <a key={label} href={href} target="_blank" rel="noreferrer" className="social-btn">{label}</a>
             ))}
           </div>
-        </FadeUp>
+        
       </div>
     </section>
   );
