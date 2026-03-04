@@ -47,7 +47,7 @@ const globalCSS = `
     100% { background-position: 200% center; }
   }
 
-  .fade-up { opacity: 0; transform: translateY(36px); transition: opacity 0.75s ease, transform 0.75s ease; }
+  .fade-up { opacity: 1; transform: translateY(0); transition: opacity 0.75s ease, transform 0.75s ease; }
   .fade-up.visible { opacity: 1; transform: translateY(0); }
 
   .nav-link {
